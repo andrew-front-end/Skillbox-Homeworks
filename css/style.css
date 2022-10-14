@@ -1,0 +1,326 @@
+/*  Базовый сброс стилей*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*  Для тега body в файле style.css добавьте следующее css-правило:
+
+font-family: Arial, Verdana, sans-serif;  */
+
+body {
+  font-family: Arial, Verdana, sans-serif;
+}
+
+/*  убираем лишние отступы */
+
+h1,
+.gray,
+h2,
+h3,
+p,
+figure,
+ul {
+  margin: 0;
+}
+
+/*  Обернуть все содержимое тега body в тег <div> с классом .main-content, а в css-файле прописать ему следующие стили: */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #fff;
+  background-color: #070217;
+}
+
+/*  Сделать отступ снизу у логотипа 50 пикселей.
+Сделать отступ снизу у дива со ссылками Indents и Modules - 50 пикселей.
+Сделать ссылки Indents и Modules строчно-блочными, а также добавить внутренние отступы - сверху и снизу 24 пикселя, слева и справа 49 пикселей
+Сделать для ссылок Indents и Modules следующие стили:
+
+толщина шрифта 700
+размер шрифта 18 пикселей
+цвет фона - #3f2aff  */
+
+.home__logo {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.home__links {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.home__link {
+  display: inline-block;
+  padding: 24px 49px;
+  background-color: #3f2aff;
+}
+
+/*  Реализовать отступ между ссылками в 25 пикселей.
+Примечание: Помните о правилах отступов - мы не можем делать отступы крайним элементам, поэтому здесь стоит использовать псевдокласс :last-child. */
+
+.home__link:not(:last-child) {
+  margin-right: 25px;
+}
+
+.home__download {
+  display: inline-block;
+  padding-left: 25px;
+  color: #3f2aff;
+  background-image: url("../img/download.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+/*  Обернуть все содержимое тега body в див с классом container, а также напишите для него следующие стили: */
+
+.article__container {
+  margin: 0 auto;
+  padding: 80px 0;
+  width: 1170px;
+}
+
+/*  Сделать для главного заголовка сайта отступ снизу 40 пикселей.
+Задать следующие стили для главного заголовка:
+
+толщина шрифта 400
+размер шрифта 60 пикселей
+межстрочный интервал 60 пикселей
+цвет текста #333  */
+
+.article__h1,
+.article__text {
+  font-weight: 400;
+  color: #333;
+}
+
+.article__h1 {
+  margin-bottom: 40px;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.article__text {
+  margin-bottom: 40px;
+  width: 872px;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.gray-block {
+  border-radius: 20px;
+  margin-bottom: 40px;
+  padding: 30px;
+  background-color: #f3f3f3;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.gray-last {
+  margin-bottom: 0px;
+}
+
+.gray-block .article__text {
+  margin-bottom: 10px;
+  width: 692px;
+}
+
+.bg-img-1 {
+  background-image: url("../img/decorate-1.png");
+}
+
+.bg-img-2 {
+  background-image: url("../img/decorate-2.png");
+}
+
+.bg-blue {
+  border-radius: 20px;
+  padding: 50px 95px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+  background-color: #3f2aff;
+}
+
+.article__h2,
+.article__h3 {
+  margin-bottom: 10px;
+}
+
+.article__h2 {
+  font-size: 40px;
+  line-height: 46px;
+  color: #333;
+}
+
+.article__h3 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  color: #333;
+}
+
+/*  Сделать для списка на странице внутренний отступ слева 15 пикселей, а для элементов списка (всех, кроме последнего) - отступ снизу 20 пикселей  */
+
+.article__list {
+  padding-left: 15px;
+}
+
+.article__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/*  стили ссылок в содержании */
+
+.article__list .article__item::marker {
+  color: #3f2aff;
+}
+
+.article__item .article__link {
+  border-bottom: 1px solid #3f2aff;
+  font-size: 20px;
+  color: #3f2aff;
+}
+
+.article__img {
+  margin-bottom: 40px;
+}
+
+figure {
+  display: inline-block;
+  margin-bottom: 40px;
+  width: 872px;
+  font-size: 0;
+}
+
+.desc {
+  border: 1px solid #b6b6b6;
+  border-top: none;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Modules styles */
+
+.modules__container {
+  margin: 0 auto;
+  padding: 50px 375px; /*74.5px bottom*/
+  max-width: 100%;
+}
+
+.modules__h1,
+.modules__h2,
+.modules__link {
+  color: #3f2aff;
+}
+
+.modules__list {
+  /* font-size: 0; */
+  padding: 0;
+  list-style: none;
+}
+
+.modules__item {
+  width: 572px;
+  height: 505px;
+  display: inline-block;
+  position: relative;
+  filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.1));
+  background-color: #fff;
+  vertical-align: top;
+
+  font-size: 16px;
+
+  margin-bottom: 25px;
+  margin-right: 25px;
+  padding: 205px 25px 25px 25px;
+}
+
+.lmodules__item:nth-child(2n) {
+  margin-right: 0;
+}
+.modules__item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+}
+.image-1:before {
+  background-image: url("../img/card1.png");
+}
+.image-2:before {
+  background-image: url("../img/card2.png");
+}
+.image-3:before {
+  background-image: url("../img/card3.png");
+}
+.image-4:before {
+  background-image: url("../img/card4.png");
+}
+
+li.modules__card {
+  display: inline-block;
+  justify-content: space-between;
+  flex-wrap: inherit;
+  list-style-type: none;
+  /* отступы между карточками 25px */
+}
+
+.modules__card {
+  /* position: relative;*/
+  width: 572px;
+  height: 505px;
+}
+
+/*
+img.modules__card {
+  width: 572px;
+  height: 180px;
+}
+
+.lesson {
+  list-style-type: none;
+} */
+
+/* Что нужно сделать
+
+Определите контейнер сайта и создайте его в разметке, затем задайте правильные стили для выравнивания по центру.
+
+Подсказка: вспомните свойство display, чтобы выстроить элементы как на макете.
+Сверстайте в карточке:
+Декоративное (фоновое изображение) - их, как и стрелочку для ссылки «На главную», нужно вырезать из макета в Figma).
+Заголовок.
+Список уроков модуля.
+Номер модуля
+Сделайте так, чтобы номер модуля не влиял на другой контент карточки.
+Подсказка: используйте соответствующее позиционирование.
+Определите, каким элементом лучше сделать «Показать ещё» и сверстайте.
+Напоминаем: Перед отправкой работы всегда проверяйте код в валидаторе и HTMLHint. Также помните про правила кодстайла. */
