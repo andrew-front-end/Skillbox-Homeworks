@@ -29,7 +29,9 @@ h2,
 h3,
 p,
 figure,
-li {
+li,
+.modules__list,
+button {
   margin: 0;
 }
 
@@ -213,29 +215,50 @@ figure {
   text-align: center;
 }
 
-/* ? Modules styles */
-/* * задайте правильные стили для выравнивания по центру. */
+/* ! Modules styles */
 .modules__container {
+  width: 1920px;
   margin: 0 auto;
-  padding: 50px 375px; /*74.5px bottom*/
-  max-width: 100%;
+  padding: 50px 375px;
+}
+
+.logo {
+  padding-top: 50px;
 }
 
 .modules__h1,
-.modules__h2,
 .modules__link {
+  padding-top: 25px;
   color: #3f2aff;
 }
 
+.logo,
+.modules__link {
+  display: block;
+}
+
+.modules__h1 {
+  font-weight: 700;
+  font-size: 60px;
+}
+
 /* * стили карточек */
-/* ! Подсказка: вспомните свойство display,
-! чтобы выстроить элементы как на макете. */
-/* * Сделайте так, чтобы номер модуля не влиял на другой контент карточки.
-Подсказка: используйте соответствующее позиционирование. */
-.modules__list {
-  /* font-size: 0; */
-  padding: 0;
+.modules__list,
+.module-list {
+  font-size: 0;
+  padding: 50px 0 0 0;
   list-style: none;
+}
+
+.module-list {
+  padding: 0;
+}
+
+.modules__h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  color: #3f2aff;
 }
 
 .modules__item {
@@ -247,16 +270,15 @@ figure {
   background-color: #fff;
   vertical-align: top;
 
-  font-size: 16px;
-
   margin-bottom: 25px;
   margin-right: 25px;
   padding: 205px 25px 25px 25px;
 }
 
-.lmodules__item:nth-child(2n) {
+.modules__item:nth-child(2n) {
   margin-right: 0;
 }
+
 .modules__item:before {
   content: "";
   position: absolute;
@@ -266,45 +288,68 @@ figure {
   height: 180px;
   background-size: cover;
 }
+
 .image-1:before {
   background-image: url("../img/card1.png");
 }
+
 .image-2:before {
   background-image: url("../img/card2.png");
 }
+
 .image-3:before {
   background-image: url("../img/card3.png");
 }
+
 .image-4:before {
   background-image: url("../img/card4.png");
 }
 
-li.modules__card {
-  display: inline-block;
-  justify-content: space-between;
-  flex-wrap: inherit;
-  list-style-type: none;
-  /* отступы между карточками 25px */
+.lesson {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 33px;
 }
 
 .modules__card {
-  /* position: relative;*/
+  display: inline-block;
+  position: relative;
   width: 572px;
   height: 505px;
 }
 
-/*
-img.modules__card {
-  width: 572px;
-  height: 180px;
+.modules__card:nth-child(2n) {
+  margin-right: 0;
 }
 
-.lesson {
-  list-style-type: none;
-} */
+/* номер модуля */
+.modules__card-number {
+  position: absolute;
+  width: 45px;
+  height: 46px;
+  left: 477px;
+  top: 229px;
+  font-size: 40px;
+  line-height: 46px;
+  color: #eaeaea;
+}
 
-/* //TODO Что нужно сделать
+/* Элемент "Показать еще" */
+.modules__link-more {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
-
-
-Напоминаем: Перед отправкой работы всегда проверяйте код в валидаторе и HTMLHint. Также помните про правила кодстайла. */
+.modules__link-1 {
+  display: inline-block;
+  border: 2px solid #3f2aff;
+  background: #fff;
+  color: #3f2aff;
+  margin: 25px auto;
+  padding: 25px 76px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
