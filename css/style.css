@@ -30,7 +30,6 @@ h3,
 p,
 figure,
 li,
-.modules__list,
 button {
   margin: 0;
 }
@@ -170,7 +169,6 @@ button {
 }
 
 /*  отступы списка и его элементов  */
-
 .article__list {
   padding-left: 15px;
 }
@@ -180,7 +178,6 @@ button {
 }
 
 /*  стили ссылок в содержании */
-
 .article__list .article__item::marker {
   color: #3f2aff;
 }
@@ -217,19 +214,23 @@ figure {
 
 /* ! Modules styles */
 .modules__container {
-  width: 1920px;
+  width: 1170px;
   margin: 0 auto;
-  padding: 50px 375px;
 }
 
 .logo {
   padding-top: 50px;
 }
 
-.modules__h1,
 .modules__link {
   padding-top: 25px;
   color: #3f2aff;
+}
+
+.modules__link,
+.modules__list {
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .logo,
@@ -237,119 +238,85 @@ figure {
   display: block;
 }
 
-.modules__h1 {
+.modules__h1,
+.modules__h2,
+.modules__btn {
   font-weight: 700;
-  font-size: 60px;
-}
-
-/* * стили карточек */
-.modules__list,
-.module-list {
-  font-size: 0;
-  padding: 50px 0 0 0;
-  list-style: none;
-}
-
-.module-list {
-  padding: 0;
-}
-
-.modules__h2 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 46px;
   color: #3f2aff;
 }
 
-.modules__item {
-  width: 572px;
-  height: 505px;
-  display: inline-block;
-  position: relative;
-  filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.1));
-  background-color: #fff;
-  vertical-align: top;
-
-  margin-bottom: 25px;
-  margin-right: 25px;
-  padding: 205px 25px 25px 25px;
+.modules__h1 {
+  font-size: 60px;
+  padding-top: 25px;
 }
 
-.modules__item:nth-child(2n) {
-  margin-right: 0;
+/* стили карточек */
+.modules__cards {
+  margin: 50px 0 25px 0;
+  font-size: 0;
 }
 
-.modules__item:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 180px;
-  background-size: cover;
+.modules__cards,
+.modules__list {
+  padding: 0;
+  list-style: none;
 }
 
-.image-1:before {
-  background-image: url("../img/card1.png");
-}
-
-.image-2:before {
-  background-image: url("../img/card2.png");
-}
-
-.image-3:before {
-  background-image: url("../img/card3.png");
-}
-
-.image-4:before {
-  background-image: url("../img/card4.png");
-}
-
-.lesson {
+.modules__list {
   font-weight: 400;
   font-size: 20px;
   line-height: 33px;
 }
 
 .modules__card {
-  display: inline-block;
   position: relative;
+  display: inline-block;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  vertical-align: top;
   width: 572px;
-  height: 505px;
+  min-height: 505px;
+  filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.1));
+  background-color: #fff;
 }
 
 .modules__card:nth-child(2n) {
   margin-right: 0;
 }
 
+.modules__card-img {
+  height: 180px;
+  background-size: cover;
+}
+
+.modules__card-wrap {
+  padding: 25px;
+}
+
+.modules__h2,
+.modules__card-number {
+  font-size: 40px;
+}
+
 /* номер модуля */
 .modules__card-number {
   position: absolute;
-  width: 45px;
-  height: 46px;
-  left: 477px;
-  top: 229px;
-  font-size: 40px;
-  line-height: 46px;
+  right: 25px;
+  bottom: 25px;
+  font-weight: 400;
   color: #eaeaea;
 }
 
-/* Элемент "Показать еще" */
-.modules__link-more {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+/* Кнопка "Показать еще" */
+.modules__button-center {
+  margin-bottom: 50px;
+  text-align: center;
 }
 
-.modules__link-1 {
-  display: inline-block;
-  border: 2px solid #3f2aff;
-  background: #fff;
-  color: #3f2aff;
-  margin: 25px auto;
+.modules__btn {
   padding: 25px 76px;
-  font-weight: 700;
+  border: 2px solid #3f2aff;
+  background-color: transparent;
   font-size: 18px;
   line-height: 21px;
 }

@@ -5,77 +5,82 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
   <title>Модули курса Веб-верстка</title>
 </head>
 
 <body>
+  <!-- ! container -->
   <div class="modules__container">
-    <img src="/img/skillbox_1.svg" alt="Skillbox" class="logo">
+    <img src="../img/skillbox_1.svg" alt="Skillbox" class="logo">
     <!-- Ссылка «На главную» ведет на index. -->
     <div class="modules__link">
-      <img src="/img/Arrow_1.png" alt="На главную">
+      <img src="../img/Arrow_1.png" alt="На главную">
       <a href="index.html">На главную</a>
     </div>
 
     <h1 class="modules__h1">Модули курса Веб-верстка</h1>
 
     <!-- Список карточек -->
-    <ul class="modules__list">
-      <li class="modules__item image-1">
-        <div class="modules__card card-1">
+    <ul class="modules__cards">
+      <li class="modules__card">
+        <div class="modules__card-img" style="background-image: url(../img/card1.png);"></div>
+        <div class="modules__card-wrap">
           <h2 class="modules__h2">Введение</h2>
-          <ul class="modules__list module-list">
-            <li class="lesson">Как работают сайты. Верстка</li>
-            <li class="lesson">Возможности HTML, CSS, JS</li>
-            <li class="lesson">Редактор кода. Codepen</li>
-            <li class="lesson">Работа с DevTools</li>
+          <ul class="modules__list">
+            <li>Как работают сайты. Верстка</li>
+            <li>Возможности HTML, CSS, JS</li>
+            <li>Редактор кода. Codepen</li>
+            <li>Работа с DevTools</li>
           </ul>
           <span class="modules__card-number">01</span>
         </div>
       </li>
-      <li class="modules__item image-2">
-        <div class="modules__card card-2">
+      <li class="modules__card">
+        <div class="modules__card-img" style="background-image: url(../img/card2.png);"></div>
+        <div class="modules__card-wrap">
           <h2 class="modules__h2">Базовый HTML</h2>
-          <ul class="modules__list module-list">
-            <li class="lesson">Базовые теги</li>
-            <li class="lesson">Теги картинок и ссылок</li>
-            <li class="lesson">Теги таблиц</li>
-            <li class="lesson">Служебные теги</li>
-            <li class="lesson">Кодстайл HTML</li>
+          <ul class="modules__list">
+            <li>Базовые теги</li>
+            <li>Теги картинок и ссылок</li>
+            <li>Теги таблиц</li>
+            <li>Служебные теги</li>
+            <li>Кодстайл HTML</li>
           </ul>
           <span class="modules__card-number">02</span>
         </div>
       </li>
-      <li class="modules__item image-3">
-        <div class="modules__card card-3">
+      <li class="modules__card">
+        <div class="modules__card-img" style="background-image: url(../img/card3.png);"></div>
+        <div class="modules__card-wrap">
           <h2 class="modules__h2">Базовый CSS</h2>
-          <ul class="modules__list module-list">
-            <li class="lesson">Подключение CSS</li>
-            <li class="lesson">Вес селектора</li>
-            <li class="lesson">Свойство display</li>
-            <li class="lesson">Блочная модель и позиционирование</li>
-            <li class="lesson">Кодстайл CSS</li>
+          <ul class="modules__list">
+            <li>Подключение CSS</li>
+            <li>Вес селектора</li>
+            <li>Свойство display</li>
+            <li>Блочная модель и позиционирование</li>
+            <li>Кодстайл CSS</li>
           </ul>
           <span class="modules__card-number">03</span>
         </div>
       </li>
-      <li class="modules__item image-4">
-        <div class="modules__card card-4">
+      <li class="modules__card">
+        <div class="modules__card-img" style="background-image: url(../img/card4.png);"></div>
+        <div class="modules__card-wrap">
           <h2 class="modules__h2">Работа с макетом</h2>
-          <ul class="modules__list module-list">
-            <li class="lesson">Про форматы изображений</li>
-            <li class="lesson">Работа с макетом в Photoshop</li>
-            <li class="lesson">Работа с макетом в Figma</li>
+          <ul class="modules__list">
+            <li>Про форматы изображений</li>
+            <li>Работа с макетом в Photoshop</li>
+            <li>Работа с макетом в Figma</li>
           </ul>
           <span class="modules__card-number">04</span>
         </div>
       </li>
     </ul>
 
-    <div class="modules__link-more">
-      <a href="#" class="modules__link-1">Показать ещё</a>
+    <div class="modules__button-center">
+      <button class="modules__btn">Показать ещё</button>
     </div>
   </div>
 </body>
