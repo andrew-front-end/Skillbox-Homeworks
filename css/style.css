@@ -219,9 +219,9 @@ figure {
   padding-top: 50px;
 }
 
-.logo {
+.logo,
+.modules__link {
   margin-bottom: 25px;
-  /* margin-top: 50px; */
 }
 
 .modules__link {
@@ -254,7 +254,6 @@ figure {
 .modules__h1 {
   font-size: 60px;
   margin-bottom: 50px;
-  padding-top: 25px;
 }
 
 /* стили карточек */
